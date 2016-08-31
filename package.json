@@ -1,0 +1,16 @@
+{
+  "name": "moment-human-formatters",
+  "version": "1.0.0",
+  "description": "Some moment formatters made with <3 for humans",
+  "main": "index.js",
+  "scripts": {
+    "test": "scripts/test.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "consoleplusplus": "^1.4.1",
+    "lolex": "1.5.1",
+    "moment": "2.14.1"
+  }
+}
