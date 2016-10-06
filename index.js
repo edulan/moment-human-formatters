@@ -18,7 +18,7 @@ runInTime(FAKE_NOW, function () {
   console.debug(
     'Perceived date #yellow{' + pickDate.format('YYYY-MM-DD') +
     '} from now (#cyan{' + moment().format() + '}) in ' +
-    env.TZ + '=> #red{' + pickDate.formatDate() + '}'
+    env.TZ + ' => #red{' + pickDate.formatDate() + '}'
   );
 });
 
