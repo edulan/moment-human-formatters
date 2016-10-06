@@ -1,8 +1,9 @@
 var moment = require('moment');
 
 moment.fn.formatDate = function(keepTimezone, showDayOfWeek) {
-  var instance = (keepTimezone ? this.clone() : this.clone().local()).startOf('day');
-  var today = (keepTimezone ? moment.utc() : moment().local()).startOf('day');
+  var instance = this.clone();
+  var today = moment();
+
   // TODO: Adding days in a local timezone are affected by DST changes?
   var yesterday = today.clone().add(-1, 'day');
   var tomorrow = today.clone().add(1, 'day');
