@@ -9,11 +9,11 @@ require('./moment-human');
 // Some utils
 var runInTime = require('./utils').runInTime;
 
-var FAKE_NOW = moment.utc('2016-08-23T23:59:00', 'YYYY-MM-DDTHH:mm:ss', true).valueOf();
-var SELECTED_DATE = '2016-08-23';
+var FAKE_NOW = moment.utc('2016-10-16T04:00:00', 'YYYY-MM-DDTHH:mm:ss', true).valueOf();
+var SELECTED_DATE = '2016-10-15';
 
 runInTime(FAKE_NOW, function () {
-  var pickDate = moment.utc(SELECTED_DATE, 'YYYY-MM-DD', true);
+  var pickDate = moment(SELECTED_DATE, 'YYYY-MM-DD', true);
 
   console.debug(
     'Perceived date #yellow{' + pickDate.format('YYYY-MM-DD') +
